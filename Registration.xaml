@@ -1,0 +1,32 @@
+﻿<Window x:Class="Reg_Autor.autores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reg_Autor"
+        mc:Ignorable="d"
+            Title="Регистрация" Height="800" Width="800" FontSize="20" Background="Green">
+    <Grid>
+        <TextBlock FontSize="25" Text="Почта" Margin="108,72,564,680" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-9.312"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-2.627"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox Name="email" Margin="197,80,281,671"/>
+        <TextBlock FontSize="25"  Text="Логин" Margin="108,113,564,625" />
+        <TextBox Height="30" Name="login" Margin="197,113,281,641"/>
+        <TextBlock FontSize="25"  Text="Пароль" RenderTransformOrigin="0.863,0.059" Margin="94,143,578,601"/>
+        <TextBox Name="passw" Margin="197,143,281,609"/>
+
+        <TextBlock FontSize="25"  Text="Повторите пароль" Margin="44,180,528,572"/>
+        <TextBox Name="passw2" Margin="277,180,201,572"/>
+
+        <Button Content="Зарегестрироваться" Name="registratione" Click="registratione_Click" Height="41" Margin="44,372,442,371"/>
+        <Button Content="Уже есть аккаунт" Click="Button_Click" Height="45" Margin="400,370,48,369"/>
+    </Grid>
+</Window>
